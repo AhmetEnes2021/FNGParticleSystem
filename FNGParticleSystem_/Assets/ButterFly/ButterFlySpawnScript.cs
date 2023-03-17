@@ -4,35 +4,50 @@ using UnityEngine;
 
 public class ButterFlySpawnScript : MonoBehaviour
 {
-    GameObject ButterFlyPrefab;
+    [SerializeField] private GameObject ButterFlyPrefab;
     [SerializeField] private float SpawnRadius;
-    [SerializeField] private List<int> Count = new List<int>();
+    [SerializeField] private List<GameObject> ButterFlys = new List<GameObject>();
     [SerializeField] private LayerMask GroundLayer;
 
-
+    
     RaycastHit hit;
-    float SpawnX, SpawnZ, SpawnY;
-    int timer;
+    float SpawnX, SpawnZ, SpawnY,Distance;
+    int Timer,i;
 
     private void FixedUpdate()
     {
 
         SpawnX = (transform.position.x + Random.Range(-SpawnRadius, SpawnRadius + 1));
         SpawnZ = (transform.position.z + Random.Range(-SpawnRadius, SpawnRadius + 1));
-        if (Count.Count < 10)
+        if (ButterFlys.Count < 10)
         {
-            timer++;
-            if (timer > 50)
+            Timer++;
+            if (Timer > 50)
             {
                 if(Physics.Raycast(new Vector3(SpawnX, 5000, SpawnZ), transform.TransformDirection(-Vector3.up), out hit, Mathf.Infinity, GroundLayer))
                 {
                     SpawnY = hit.point.y;
-                    Instantiate(ButterFlyPrefab, new Vector3(SpawnX, SpawnY, SpawnX), Quaternion.identity);
+                    ButterFlys.Add(Instantiate(ButterFlyPrefab, new Vector3(SpawnX, SpawnY, SpawnX), Quaternion.identity));
                 }
-                timer = 0;
+                
+                Timer = 0;
                 
             }
         }
+        else
+        {
+            for (i = 0; i < ButterFlys.Count; i++)
+            {
+                Distance = Vector3.Distance(transform.position, ButterFlys[i].transform.position);
+                if (Distance > 250f)
+                {
+                    Destroy(ButterFlys[i]);
+                    ButterFlys.RemoveAt(i);
+                }
+            }
+            i = 0;
+        }
+        
     }
 
 
