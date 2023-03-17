@@ -28,7 +28,7 @@ public class RandomSpawnScript : MonoBehaviour
                 if (Physics.Raycast(new Vector3(SpawnX, 5000, SpawnZ), transform.TransformDirection(-Vector3.up), out hit, Mathf.Infinity, GroundLayer))
                 {
                     SpawnY = hit.point.y;
-                    Prefabs.Add(Instantiate(Prefab, new Vector3(SpawnX, SpawnY, SpawnX), Quaternion.identity));
+                    Prefabs.Add(Instantiate(Prefab, new Vector3(SpawnX, SpawnY, SpawnZ), Quaternion.identity));
                 }
 
                 Timer = 0;
