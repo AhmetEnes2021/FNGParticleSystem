@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000017037513, g: 0.0000000257347, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.17536446, g: 0.21941073, b: 0.30172884, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -307,14 +307,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977228839}
-  m_LocalRotation: {x: 0.69506985, y: 0.17972392, z: 0.18624337, w: -0.6707389}
+  m_LocalRotation: {x: 0.7967518, y: -0.14632066, z: 0.21348897, w: 0.54607624}
   m_LocalPosition: {x: 31.08002, y: -20.903708, z: 10.374658}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 267.95898, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 111.14801, y: -30, z: 0}
 --- !u!1 &1113420348
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,6 +877,10 @@ PrefabInstance:
     - target: {fileID: 5294225093300141086, guid: db22645b7fb2dc948a2fbe183fac609b, type: 3}
       propertyPath: m_Name
       value: FireFlyParticle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294225093300141086, guid: db22645b7fb2dc948a2fbe183fac609b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db22645b7fb2dc948a2fbe183fac609b, type: 3}
