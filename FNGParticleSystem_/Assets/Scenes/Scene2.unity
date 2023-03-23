@@ -567,13 +567,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: MudWalkParticle
       objectReference: {fileID: 0}
+    - target: {fileID: 4062341195222534501, guid: 5f68596adb5640149bd71feb6b84d390, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4062341195222534502, guid: 5f68596adb5640149bd71feb6b84d390, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4062341195222534502, guid: 5f68596adb5640149bd71feb6b84d390, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.033001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062341195222534502, guid: 5f68596adb5640149bd71feb6b84d390, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.189768
+      value: 0.18976808
       objectReference: {fileID: 0}
     - target: {fileID: 4062341195222534502, guid: 5f68596adb5640149bd71feb6b84d390, type: 3}
       propertyPath: m_LocalPosition.x
@@ -614,6 +622,14 @@ PrefabInstance:
     - target: {fileID: 4062341195222534502, guid: 5f68596adb5640149bd71feb6b84d390, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062341195222534503, guid: 5f68596adb5640149bd71feb6b84d390, type: 3}
+      propertyPath: startDelay.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062341195222534503, guid: 5f68596adb5640149bd71feb6b84d390, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].time
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f68596adb5640149bd71feb6b84d390, type: 3}
@@ -942,11 +958,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 637650988756668796, guid: 13fbe5c95eaea8542b2cff3ce2d4bc0d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 637650988756668797, guid: 13fbe5c95eaea8542b2cff3ce2d4bc0d, type: 3}
       propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 637650988756668797, guid: 13fbe5c95eaea8542b2cff3ce2d4bc0d, type: 3}
+      propertyPath: m_LengthScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 637650988756668797, guid: 13fbe5c95eaea8542b2cff3ce2d4bc0d, type: 3}
+      propertyPath: m_VelocityScale
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 637650988756668797, guid: 13fbe5c95eaea8542b2cff3ce2d4bc0d, type: 3}
+      propertyPath: m_NormalDirection
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 637650988756668797, guid: 13fbe5c95eaea8542b2cff3ce2d4bc0d, type: 3}
+      propertyPath: m_FreeformStretching
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 637650988756668797, guid: 13fbe5c95eaea8542b2cff3ce2d4bc0d, type: 3}
+      propertyPath: m_CameraVelocityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 637650988756668797, guid: 13fbe5c95eaea8542b2cff3ce2d4bc0d, type: 3}
+      propertyPath: m_RotateWithStretchDirection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13fbe5c95eaea8542b2cff3ce2d4bc0d, type: 3}
